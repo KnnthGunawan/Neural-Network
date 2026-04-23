@@ -60,7 +60,6 @@ def forward_prop(w1, b1, w2, b2, w3, b3, X):
 def categorical_cross_entropy(Y, A3):
     return -np.mean(np.sum(Y * np.log(A3 + 1e-7), axis = 1))
 
-#FIX
 def back_prop(z1, a1, z2, a2, z3, a3, w2, w3, Y, X):
     m = X.shape[0]
 
