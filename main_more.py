@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 from keras.datasets import mnist
 import random
 
+
+#Same as main.py but with an extra hidden layer and He initialization for better training stability with ReLU activations. Also added a test function to visualize predictions on the test set.
+
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 X_train = X_train / 255.0 
 X_train = X_train.reshape(-1, 784) 
